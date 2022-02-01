@@ -1,0 +1,262 @@
+@import url('http://fonts.cdnfonts.com/css/superbolt');
+@import url('http://fonts.cdnfonts.com/css/ronaldi-guje');
+@import url('http://fonts.cdnfonts.com/css/visby');
+@import url('http://fonts.cdnfonts.com/css/gelion');
+@import url('http://fonts.cdnfonts.com/css/kicker');  
+@import url('http://fonts.cdnfonts.com/css/super-punch');
+@import url('http://fonts.cdnfonts.com/css/noto-mono');
+@import url('http://fonts.cdnfonts.com/css/jumpstart-kindergarten-vietnam');
+
+
+body {
+    margin-bottom: -16px!important;
+}
+
+.carousel-item {
+    height: 32rem;
+    background: rgb(0, 0, 0);
+    color: white;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+#container-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -2;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#container-cabecalho {
+    background-color: #212443;
+    box-shadow: rgb(0 0 0 / 35%) 0px -50px 36px -28px inset;
+}
+
+.logo {
+    padding-left: 35px;
+    vertical-align: middle;
+}
+
+.cabecalho-menu {
+    margin-right: 150px ;
+}
+  
+.cabecalho-menu .ul-do-menu li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+    
+.cabecalho-menu .ul-do-menu li {
+    display: inline-block;
+    font-family: 'RONALDI GUJE', sans-serif;
+}
+  
+.cabecalho-menu .ul-do-menu li a {
+    display: block;
+    padding: 0 10px;	
+    color: #FFF;
+    font-size: 15px;
+    line-height: 60px;
+    text-decoration: none;
+    transition: transform .2s cubic-bezier(0.04, 1.1, 1, 1);
+    padding-top: 15px;
+}
+  
+.cabecalho-menu .ul-do-menu li a:hover { 
+    color: #000000;
+    transform: scale(1.2);
+}
+  
+.cabecalho-menu .ul-do-menu ul {
+    display: none;
+    position: absolute; 
+    top: 60px; 
+}
+    
+.cabecalho-menu .ul-do-menu li:hover > ul {
+    display: inherit;
+}
+
+.sanfona {
+    background-image: linear-gradient(rgba(72, 86, 99, 0.726), rgba(166, 185, 190, 0.849)) ,url(https://assets.b9.com.br/wp-content/uploads/2019/05/netflix-library.jpg);
+    margin-top: -21px;
+    padding-bottom: 100px;
+}
+
+#altera-section {
+    padding-top: 30px;
+}
+
+.sanfona h2 {
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #212443;
+    color: black;
+    padding: 0.25em 0.5em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sanfona h2 #lista-pri {
+    margin-top: 53px;
+}
+.secaoFilmes{
+    color: black;
+    padding: 0 20px;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+
+.secaoFilmes h2{
+    font-size: 1.5rem;
+    font-family: 'Jumpstart Kindergarten Vietnam', sans-serif;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.secaoFilmes .lista-filmes{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.secaoFilmes .lista-filmes li{
+    margin-right: 10px;
+}
+
+#filme1 {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#filme2 {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#filme3 {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#filme4 {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+#filme5 {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.secaoSeries{
+    color: black;
+    padding: 0 20px;
+    overflow-x: hidden;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.secaoSeries h2{
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.secaoSeries .lista-series{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-top: 10px;
+}
+
+.secaoSeries .lista-series li{
+    margin-right: 10px;
+}
+
+#serie1 {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#serie2 {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#serie3 {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#serie4 {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#serie5 {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#botao-topo {
+    position: fixed;
+    display: inline-block;
+    bottom: 10px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    z-index: 2;
+    color: #262626;
+    background-image: url(../imgs/imgs-A/Imagens/menu-abrir.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #0c0c0c;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 9px;
+}

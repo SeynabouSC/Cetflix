@@ -1,0 +1,418 @@
+@import url('http://fonts.cdnfonts.com/css/superbolt');
+@import url('http://fonts.cdnfonts.com/css/ronaldi-guje');
+@import url('http://fonts.cdnfonts.com/css/visby');
+@import url('http://fonts.cdnfonts.com/css/gelion');
+@import url('http://fonts.cdnfonts.com/css/super-punch');
+@import url('http://fonts.cdnfonts.com/css/kicker');      
+@import url('http://fonts.cdnfonts.com/css/worker-class'); 
+@import url('http://fonts.cdnfonts.com/css/danger-flight');
+@import url('http://fonts.cdnfonts.com/css/rabento-personal-use-only');
+@import url('http://fonts.cdnfonts.com/css/ronaldi-guje');
+@import url('http://fonts.cdnfonts.com/css/monkirta-pursuit-nc');
+@import url('http://fonts.cdnfonts.com/css/fontype-rounded');
+@import url('http://fonts.cdnfonts.com/css/jumpstart-kindergarten-vietnam');
+@import url('http://fonts.cdnfonts.com/css/x-heighting');
+
+
+body {
+    margin: 0px;
+    margin-bottom: -16px;
+}
+
+#container-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -2;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#container-cabecalho {
+    background-color: #212443;
+    box-shadow: rgb(0 0 0 / 35%) 0px -50px 36px -28px inset;
+}
+
+.logo {
+    padding-left: 35px;
+    vertical-align: middle;
+}
+
+.cabecalho-menu {
+    margin-right: 150px;
+}
+  
+.cabecalho-menu .ul-do-menu li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+    
+.cabecalho-menu .ul-do-menu li {
+    display: inline-block;
+    font-family: 'RONALDI GUJE', sans-serif;
+}
+  
+.cabecalho-menu .ul-do-menu li a {
+    display: block;
+    padding: 0 10px;	
+    color: #FFF;
+    font-size: 15px;
+    line-height: 60px;
+    text-decoration: none;
+    transition: transform .2s cubic-bezier(0.04, 1.1, 1, 1);
+}
+  
+.cabecalho-menu .ul-do-menu li a:hover { 
+    color: #000000;
+    transform: scale(1.2);
+}
+  
+.cabecalho-menu .ul-do-menu ul {
+    display: none;
+    position: absolute; 
+    top: 60px; 
+}
+    
+.cabecalho-menu .ul-do-menu li:hover > ul {
+    display: inherit;
+}
+
+#h2-series {
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 26px;
+    font-family: 'Danger Flight', sans-serif;
+}
+
+img.poster {
+    border-radius: 10px;
+}
+
+.poster {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    min-width: 0;
+    height: 300px;
+    min-height: 0;
+    width: 100%;
+    margin-bottom: 6px;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 50%);
+    transition: all .5s cubic-bezier(.67,.13,.1,.81);
+}
+
+.poster:hover {
+    cursor: pointer;
+    transform: scale(1.07, 1.07);
+}
+
+.serie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    padding: 8px 18px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 60px;
+}
+
+
+.titulo-serie {
+    text-transform: uppercase;
+    color: #6e6565;
+    margin-bottom: 4px;
+    font-size: 15px;
+    font-family: 'RONALDI GUJE', sans-serif;
+}
+
+.DEL {
+    color:white;
+    padding: 3px 5px 3px 5px;
+    background-color: darkgreen;
+    border-radius: 2px;
+}
+.DE10 {
+    color: white;
+    padding: 3px;
+    background-color: rgb(122, 168, 255);
+    border-radius: 2px;
+}
+.DE12 {
+    color: rgb(73, 70, 70);
+    padding: 3px;
+    background-color: #ffd905;
+    border-radius: 2px;
+}
+.DE14 {
+    color: white;
+    padding: 3px;
+    background-color: #FF8C00;
+    border-radius: 2px;
+}
+.DE16 {
+    color: white;
+    padding: 3px;
+    background-color: red;
+    border-radius: 2px;
+}
+.DE18 {
+    color: white;
+    padding: 3px;
+    background-color: #1C1C1C;
+    border-radius: 2px;
+}
+
+/*--------------------
+QUADROS
+
+    opacity: 0;
+    visibility: hidden;
+
+--------------------*/
+
+.detalhe { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+
+#info-series {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width:800px;
+    height:400px;
+    margin: 50px auto;
+    margin-top: 100px;
+    border-radius: 16px;
+    max-width: 770px;
+    opacity: 0;
+    background-color: white;
+    box-shadow: 0 0 40px rgba(0,0,0,0.3);
+    z-index: 2;
+    -webkit-transition: all 0.5s 0.5s ease-in-out;
+    transition: all 0.5s 0.5s ease-in-out;
+}
+
+#detail .adc {
+    background-color: white;
+    border-radius: 12px;
+    display: grid;
+    float: right;
+    margin-top: 25%;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: -10%;
+}
+
+.adc #temp-b,
+.adc #ep-b,
+.adc #plat-b {
+    font-weight: bold;
+    font-family: 'Gelion', sans-serif;
+}
+
+.adc .temporadas,
+.adc .episodios,
+.adc .plataformas {
+    color: rgba(155, 135, 135, 0.877);
+    font-weight: bold;
+    font-family: 'Fontype Rounded', sans-serif;
+}
+
+.post {
+    position: relative;
+    z-index: -2;
+    top: -10%;
+    left: -6%;
+    height: 100%;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 40%);
+    transition: all .5s cubic-bezier(.67,.13,.1,.81);
+}
+
+.titulo {
+    position: relative;
+    margin-top: 50px;
+    font-size: 33px;
+    font-weight: 300;
+    color: #0c0c0c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+.info .ano-serie,
+.info  {
+    font-family: 'Gelion', sans-serif;
+    font-weight: bold; 
+    padding-top: 5px;   
+    padding-left: 3px ;                                                       
+    font-size: 11px;
+    opacity: .8;
+    position: relative;
+}
+  
+.descricao-serie {
+    padding-top: 12px;
+}
+  
+.descricao-serie {
+    position: relative;
+    font-family: 'Gelion', sans-serif;
+    text-align: justify;
+    font-weight: 100;
+    line-height: 17px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.modal-close {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+.modal-close::after{
+    content: "x";
+    font-size: 16px;
+    font-family: 'RONALDI GUJE', sans-serif;
+    text-decoration: none;
+    color: black;
+    float: right;
+    margin-right: 5%;
+    margin-top: 3%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+div.detalhe.mostrar {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    transition-delay: 0s;
+}
+  
+div.detalhe.mostrar #info-series {
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+/*--------------------
+QUADROS
+--------------------*/
+
+
+
+
+
+.rodape{
+    padding: 0 20px;
+    margin-top: 10px;
+    background-image: linear-gradient(rgba(72, 86, 99, 0.726), rgba(166, 185, 190, 0.849)) ,url(https://assets.b9.com.br/wp-content/uploads/2019/05/netflix-library.jpg);
+    background-size: cover;
+    box-shadow: -2em 0 1em black
+}
+
+.rodape .rodape__midiasSociais ul{
+    display: flex;
+}
+.rodape .rodape__midiasSociais ul li {
+    margin-right: 8px;
+    list-style-type: none;
+}
+
+.rodape .rodape__midiasSociais ul li img {
+    max-width: 45px;
+    min-width: 0;
+    height: 30px;
+    min-height: 0;
+    padding-top: 20px;
+}
+
+.rodape .container p {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Kicker', sans-serif;
+}
+
+.rodape .rodape__menuNavegacao{
+    margin: 12px 0;
+}
+.rodape .rodape__menuNavegacao ul{
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+.rodape .rodape__menuNavegacao ul li a{
+    color: #030303;
+    text-decoration: none;
+    font-family: 'SUPER PUNCH', sans-serif;
+}
+
+@media screen and (min-width: 620px) {
+    .secaoDestaque {
+        padding: 100px 20px 42px;
+    }
+    .secaoDestaque .secaoDestaque__descricaoDestaque h1 img {
+        max-width: 320px;
+    }
+    .secaoDestaque .secaoDestaque__descricaoDestaque {
+        max-width: 380px;
+    }
+    .rodape .rodape__menuNavegacao {
+        display: flex;
+        justify-content: space-between;
+    }
+    .rodape .rodape__menuNavegacao ul li{
+        margin-bottom: 20px;
+    }
+}
+
+#botao-topo {
+    position: fixed;
+    display: inline-block;
+    bottom: 10px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    z-index: 2;
+    color: #262626;
+    background-image: url(../imgs/Imagens/menu-abrir.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 9px;
+}

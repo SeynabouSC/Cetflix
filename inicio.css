@@ -1,0 +1,169 @@
+@import url('http://fonts.cdnfonts.com/css/ronaldi-guje');
+@import url('http://fonts.cdnfonts.com/css/super-punch');
+@import url('http://fonts.cdnfonts.com/css/kicker');  
+
+body {
+    margin-bottom: -16px!important;
+}
+
+.carousel-item {
+    height: 32rem;
+    background: rgb(0, 0, 0);
+    color: white;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+#container-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -2;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#container-cabecalho {
+    background-color: #212443;
+    box-shadow: rgb(0 0 0 / 35%) 0px -50px 36px -28px inset;
+}
+
+.logo {
+    padding-left: 35px;
+    vertical-align: middle;
+}
+
+.cabecalho-menu {
+    margin-right: 150px ;
+}
+  
+.cabecalho-menu .ul-do-menu li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+    
+.cabecalho-menu .ul-do-menu li {
+    display: inline-block;
+    font-family: 'RONALDI GUJE', sans-serif;
+}
+  
+.cabecalho-menu .ul-do-menu li a {
+    display: block;
+    padding: 0 10px;	
+    color: #FFF;
+    font-size: 15px;
+    line-height: 60px;
+    text-decoration: none;
+    transition: transform .2s cubic-bezier(0.04, 1.1, 1, 1);
+    padding-top: 15px;
+}
+  
+.cabecalho-menu .ul-do-menu li a:hover { 
+    color: #000000;
+    transform: scale(1.2);
+}
+  
+.cabecalho-menu .ul-do-menu ul {
+    display: none;
+    position: absolute; 
+    top: 60px; 
+}
+    
+.cabecalho-menu .ul-do-menu li:hover > ul {
+    display: inherit;
+}
+
+.rodape{
+    padding: 0 20px;
+    margin-top: 40px;
+    background-image: linear-gradient(rgba(72, 86, 99, 0.726), rgba(166, 185, 190, 0.849)) ,url(https://assets.b9.com.br/wp-content/uploads/2019/05/netflix-library.jpg);
+    background-size: cover;
+    box-shadow: -2em 0 1em black
+}
+
+.rodape .rodape__midiasSociais ul{
+    display: flex;
+}
+.rodape .rodape__midiasSociais ul li {
+    margin-right: 8px;
+    list-style-type: none;
+}
+
+.rodape .rodape__midiasSociais ul li img {
+    max-width: 45px;
+    min-width: 0;
+    max-height: 50px;
+    min-height: 0;
+    padding-top: 20px;
+}
+
+.rodape .container-footer p {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Kicker', sans-serif;
+}
+
+.rodape .rodape__menuNavegacao{
+    margin: 12px 0;
+}
+.rodape .rodape__menuNavegacao ul{
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+.rodape .rodape__menuNavegacao ul li a{
+    color: #030303;
+    text-decoration: none;
+    font-family: 'SUPER PUNCH', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    .secaoDestaque {
+        padding: 100px 20px 42px;
+    }
+    .secaoDestaque .secaoDestaque__descricaoDestaque h1 img {
+        max-width: 320px;
+    }
+    .secaoDestaque .secaoDestaque__descricaoDestaque {
+        max-width: 380px;
+    }
+    .rodape .rodape__menuNavegacao {
+        display: flex;
+        justify-content: space-between;
+    }
+    .rodape .rodape__menuNavegacao ul li{
+        margin-bottom: 20px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #0c0c0c;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 9px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/jpg" href="../imgs/imgs-Q/Imagens/favicon.jpg" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+<body>
+
+    <header class="cabecalho" id="idCabecalho">
+        <div id="container-cabecalho">
+            <a href="Inicio.html"><img src="../imgs/imgs-Q/Imagens/cetflix-menor.png" class="logo" alt="Cetflix"></a>
+            <nav class="cabecalho-menu">
+                <ul class="ul-do-menu">
+                    <li><a href="Inicio.html">Início</a></li>
+                    <li><a href="filmes.html">Filmes</a></li>
+                    <li><a href="site-series.html">Séries</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="criadoras.html">Autores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Insira seu nome para que possamos salvar sua pontuação!</h2>
+                <input type="text" name="name" id="username" placeholder="Digite seu nome...">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Salvar</button>
+            </form>
+            <a href="../html/game.html" class="btn">Jogar Novamente</a>
+            <a href="../html/quiz.html" class="btn">Voltar a página inicial<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+    <script src="../scripts/scriptsQuiz/end.js"></script>
+</body>
+</html>

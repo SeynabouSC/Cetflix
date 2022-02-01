@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/jpg" href="../imgs/Imagens/favicon.jpg" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+    <header class="cabecalho" id="idCabecalho">
+        <div id="container-cabecalho">
+            <a href="Inicio.html"><img src="../imgs/Imagens/cetflix-menor.png" class="logo" alt="Cetflix"></a>
+            <nav class="cabecalho-menu">
+                <ul class="ul-do-menu">
+                    <li><a href="Inicio.html">Início</a></li>
+                    <li><a href="filmes.html">Filmes</a></li>
+                    <li><a href="site-series.html">Séries</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="criadoras.html">Autores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Questão
+                    </p>
+                    <div id="progressoBarra">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Pontuação
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <div id="fundo-do-quiz">
+            <h1 id="questao">Enunciado da pergunta</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">opcao</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">opcao 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">opcao 3</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/scriptsQuiz/game.js"></script>
+</body>
+</html>

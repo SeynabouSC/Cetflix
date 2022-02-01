@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('http://fonts.cdnfonts.com/css/ronaldi-guje');
+@import url('http://fonts.cdnfonts.com/css/xhers');
+@import url('http://fonts.cdnfonts.com/css/upbolters-2');
+@import url('http://fonts.cdnfonts.com/css/gempita');
+@import url('http://fonts.cdnfonts.com/css/hedgier');
+@import url('http://fonts.cdnfonts.com/css/roboto-condensed');
+@import url('http://fonts.cdnfonts.com/css/glowkin-demo');
+@import url('http://fonts.cdnfonts.com/css/ubuntu-mono');
+@import url('http://fonts.cdnfonts.com/css/passion-one');
+@import url('http://fonts.cdnfonts.com/css/dashboard');
+@import url('http://fonts.cdnfonts.com/css/sf-electrotome-2');
+@import url('http://fonts.cdnfonts.com/css/poetsen-one');
+@import url('http://fonts.cdnfonts.com/css/acephimere');
+@import url('http://fonts.cdnfonts.com/css/mr');
+
+body {
+    margin: 0px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+p {
+    color: rgb(129, 8, 8);
+    font-size: 3.5rem;
+    justify-content: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: rgb(0 0 0 / 17%) -1px 0px 89px 75px inset, rgb(0 0 0 / 15%) 0px -36px 30px 0px inset, rgb(0 0 0 / 10%) 0px -79px 40px 0px inset, rgb(0 0 0 / 6%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 8px, rgb(0 0 0 / 9%) 0px 32px 16px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    font-family: 'UPBOLTERS', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(90deg, rgb(60 40 110) 0%, rgb(185 15 15) 100%);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(13, 13, 14, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: linear-gradient(90deg, rgb(40 45 104) 0%, rgb(28 68 96) 100%);
+}
+
+#highscore-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(15, 15, 15, 0.5)
+}
+
+.fa-crown {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+/* End Page CSS */
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(3, 3, 3, 0.5);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'Acephimere', sans-serif;
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+.fa-home {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(28, 26, 26)
+}
+
+#fundo-do-quiz {
+    background-color: rgb(137 122 122 / 35%);
+    border-radius: 6px;
+    padding: 7px;
+    margin-right: 10px;
+    max-width: 800px;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 20%);
+}
+
+#highScoresList {
+    list-style: none;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+}
+
+
+#container-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -2;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#container-cabecalho {
+    background-color: #212443;
+    box-shadow: rgb(0 0 0 / 35%) 0px -50px 36px -28px inset;
+}
+
+.logo {
+    padding-left: 35px;
+    vertical-align: middle;
+}
+
+.cabecalho-menu {
+    margin-right: 150px ;
+}
+  
+.cabecalho-menu .ul-do-menu li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+    
+.cabecalho-menu .ul-do-menu li {
+    display: inline-block;
+    font-family: 'RONALDI GUJE', sans-serif;
+}
+  
+.cabecalho-menu .ul-do-menu li a {
+    display: block;
+    padding: 0 10px;	
+    color: #FFF;
+    font-size: 15px;
+    line-height: 60px;
+    text-decoration: none;
+    transition: transform .2s cubic-bezier(0.04, 1.1, 1, 1);
+}
+  
+.cabecalho-menu .ul-do-menu li a:hover { 
+    color: #000000;
+    transform: scale(1.2);
+}
+  
+.cabecalho-menu .ul-do-menu ul {
+    display: none;
+    position: absolute; 
+    top: 60px; 
+}
+    
+.cabecalho-menu .ul-do-menu li:hover > ul {
+    display: inherit;
+}
+
+#home {
+    background-color: rgb(137 122 122 / 35%);
+    border-radius: 6px;
+    padding: 5px;
+    margin-right: 10px;
+    max-width: 700px;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 20%);
+}
+
+#p-comeco {
+    font-size: 20px;
+    margin-bottom: 4rem;
+    color: rgb(2, 2, 2);
+    margin-top: 7%;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: 'Mr Bold', sans-serif;
+    font-weight: 700;
+}
+
+.quadro {
+    background-color: #38353512;
+    margin-bottom: 40px;
+    margin-top: -26px;
+    border-radius: 6px;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+    text-align: center;
+}
+
+#highScores {
+    background-color: rgb(137 122 122 / 35%);
+    border-radius: 6px;
+    padding: 5px;
+    margin-right: 10px;
+    max-width: 700px;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 20%);
+    max-width: 800px;
+    padding: 54px;
+}
+
+#finalScore {
+    font-family: 'Glowkin Demo', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+li.high-score {
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+
+#questao {
+    font-size: 3.5rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5rem;
+    text-align: center;
+    padding-top: 6px;
+}
+
+#questao {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5rem;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-family: 'Acephimere', sans-serif;
+                                                                                                                                 
+}
+
+.hud-main-text {
+    font-size: 3.5rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5rem;
+    text-align: center;
+    padding-top: 6px;
+    font-family: 'SF Electrotome', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 9px;
+}

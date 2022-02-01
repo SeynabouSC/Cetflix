@@ -1,0 +1,109 @@
+@import url('http://fonts.cdnfonts.com/css/b612-mono');
+@import url('http://fonts.cdnfonts.com/css/wadu');
+@import url('http://fonts.cdnfonts.com/css/fibel-sued');
+@import url('http://fonts.cdnfonts.com/css/super-mario-maker-extended');
+@import url('http://fonts.cdnfonts.com/css/fontype-rounded');
+
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(98, 100, 104);
+    font-size: 3rem;
+    min-width: 72rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: rgb(10 58 108 / 85%);
+    font-family: 'Super Mario Maker Extended', sans-serif;
+    background-color: #0000001f;
+    border-radius: 7px;
+    padding-top: 30px;                                         
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: 'Fontype Rounded', sans-serif;
+    font-size: 29px;
+    font-weight: 800;                                                                   
+}
+
+.correct {
+    background: linear-gradient(32deg, rgb(41, 194, 59) 0%, rgb(16, 112, 51)00%);
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgb(148, 42, 42) 0%, rgb(172, 18, 18) 100%);
+}
+
+/* Heads up Display */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressoBarra {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(203 33 33 / 18%);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(41, 39, 145);
+    width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}
+
+#progressText {
+    font-family: 'Fibel Sued', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+p.hud-prefix {
+    font-family: 'Fibel Sued', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 9px;
+}
